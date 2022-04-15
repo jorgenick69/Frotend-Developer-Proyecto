@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+     :root {
+        --very-light-pink: #C7C7C7;
+        --white: #fff;
+        --text-input-field: #f7f7f7;
+        --black: #000;
+        --hospital-green: #ACD9B2;
+        --dark: #232830;
+        --xsm: 10px;
+        --sm: 14px;
+        --md: 16px;
+        --lg: 18px;
+    }
+    
+    body {
+        font-family: 'Quicksand', sans-serif;
+        margin: 0;
+    }
+    
+    .menu {
+        display: none;
+    }
+    
+    .nav {
+        width: 100vw !important;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--very-light-pink);
+    }
+    
+    .logo {
+        width: 100px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    
+    .navbar-left ul,
+    .navbar-rigth ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+    
+    .navbar-left,
+    .navbar-rigth {
+        display: flex;
+        align-items: center;
+    }
+    
+    .navbar-rigth {
+        margin-right: 16px;
+    }
+    
+    .navbar-left ul {
+        gap: 16px;
+    }
+    
+    .navbar-left li a,
+    .navbar-rigth li a {
+        color: var(--very-light-pink);
+        text-decoration: none;
+        font-size: var(--sm);
+    }
+    
+    .navbar-left li a:hover,
+    .navbar-rigth li a:hover {
+        color: var(--hospital-green);
+        text-decoration: none;
+        border: 1px solid var(--hospital-green);
+        transition: 0.5s;
+        padding: 10px;
+        border-radius: 8px;
+    }
+    
+    .navbar-rigth div:nth-child(1) {
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .navbar-rigth ul li:nth-child(1) a {
+        position: relative;
+        cursor: pointer;
+        font-size: var(--xsm) !important;
+    }
+    
+    .count {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 12px;
+        height: 12px;
+        background-color: var(--hospital-green);
+        border-radius: 50%;
+        font-size: var(--xsm);
+        position: absolute;
+        top: -8px;
+        right: -5px;
+    }
+    
+    @media(max-width:750px) {
+        .navbar-left li a,
+        .navbar-rigth li a {
+            color: var(--very-light-pink);
+            text-decoration: none;
+            font-size: var(--xsm);
+        }
+        .navbar-left ul {
+            gap: 10px;
+        }
+    }
+    
+    @media(max-width:640px) {
+        .menu {
+            display: block;
+            width: 30px;
+            margin-left: 10px;
+        }
+        .navbar-left ul {
+            display: none;
+        }
+        .logo {
+            width: 80px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .navbar-rigth ul li:nth-child(1) a {
+            display: none;
+        }
+    }
+</style>
+
+<body>
+
+    <nav class="nav">
+        <img class="menu" src=" /img/icons/icon_menu.svg " alt=" ">
+        <div class="navbar-left ">
+            <img class="logo " src=" /img/logos/logo_yard_sale.svg " alt=" ">
+            <ul>
+                <li>
+                    <a href=" ">All</a>
+                </li>
+                <li>
+                    <a href=" ">Clothes</a>
+                </li>
+                <li>
+                    <a href=" ">Electronics</a>
+                </li>
+                <li>
+                    <a href=" ">Furnitures</a>
+                </li>
+                <li>
+                    <a href=" ">Toys</a>
+                </li>
+                <li>
+                    <a href=" ">Others</a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-rigth">
+            <ul>
+                <li>
+                    <a href="">Jorgemartindominguezdiaz@gmail.com</a>
+                </li>
+                <li>
+                    <div>
+                        <img class="navbar-shopping-cart " src="/img/icons/icon_shopping_cart.svg " alt=" ">
+                        <div class="count">2 </div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+</body>
+
+</html>
